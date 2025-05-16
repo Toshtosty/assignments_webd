@@ -17,6 +17,7 @@ Only use callbacks for handling asynchronous operations in this task.
 */
 
 
+console.log("task 1 with call back ..........");
 
 
 
@@ -77,5 +78,8 @@ function uploadFile(file, up_url,callback) {
 downloadData("abc.com",(file_abc)=>{
     GenerateFile(file_abc,(file_name)=>{
         uploadFile(file_name,"xyz.com");
+
+        console.log("all done!!");
+        
     })
 })
